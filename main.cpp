@@ -3,6 +3,7 @@
 
 int main(int argc, char *argv[])
 {
-	Arp arp;
-	return 0;
+	Arp arp(argv[1]);
+	arp.getInfo();
+	return arp.arp(argv[2], argv[3], argv[4], argv[5], arp.op_reply);
 }
